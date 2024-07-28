@@ -160,7 +160,7 @@ function ssr(request) {
  * @returns {string}
  */
 function get_origin(headers) {
-  const protocol = (protocol_header && headers.get(protocol_header)) || "https";
+  const protocol = "https";
   const host = headers.get(host_header);
   return `${protocol}://${host}`;
 }
